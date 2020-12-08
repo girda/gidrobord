@@ -7,8 +7,8 @@
     
     &__inner
         display: flex
-        justify-content: center
-        padding: 10px 0
+        justify-content: space-between
+        padding: 40px 0
 
     &__contact
         display: flex
@@ -23,20 +23,28 @@
             
             &:hover
                 color: $gold
-                
-    &__social .social
-    
-        position: absolute
-        top: 50%
-        right: 0
-        transform: translateY(-50%)
-        
-        &__link:hover
-            svg
-                fill: $gold
 
-        svg
-            fill: $white
+            
+    &__menu
+        a 
+            font-size: 14px
+            color: $white
+            &:hover 
+                color: $gold
+                
+    // &__social .social
+    
+    //     position: absolute
+    //     top: 50%
+    //     right: 0
+    //     transform: translateY(-50%)
+        
+    //     &__link:hover
+    //         svg
+    //             fill: $gold
+
+    //     svg
+    //         fill: $white
             
     &__copyright
         padding-bottom: 10px

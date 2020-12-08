@@ -11,7 +11,7 @@ if (counters.length) counters.forEach(counter => new Counter(counter));
 
 
 // initBag();
-animation();
+// animation();
 // order();
 
 $('.js-hero-slider').slick({
