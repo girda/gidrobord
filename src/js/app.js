@@ -25,3 +25,12 @@ $('.js-hero-slider').slick({
 $('.js-comments-slider').slick({
   slidesToShow: 4
 });
+
+
+const burger = document.querySelector('.js-burger');
+const mainNav = document.querySelector('.js-main-nav');
+
+burger.addEventListener('click', () => {
+  mainNav.classList.toggle('is-show');
+  burger.classList.toggle('is-active');
+});

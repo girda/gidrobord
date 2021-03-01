@@ -31,4 +31,21 @@
     +r(1100)       
         &__list
             display: none
+            &.is-show
+                display: flex
+                flex-direction: column
+                position: fixed
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+                background-color: #1d1d1d
+                z-index: 100
+                padding-top: 80px
             
+        &__item
+            margin: 0 0 15px
+            display: flex
+            justify-content: center
+            a 
+                font-size: 22px
