@@ -31,26 +31,26 @@ $('.js-burger').click(() => {
 });
 
 
-function adaptiveSliders(el,elClass) {
-  if(window.matchMedia('(min-width: 768px)').matches) {
-    if($(el + slickInit).length >= 1) {
-      $(el).slick('unslick');
-    }
-  } else {
-    $(el).not(slickInit).slick({
-      slidesToShow: 1,
-      // prevArrow: '<button class="' + elClass + '__btn-prev" type="button"></button>',
-      // nextArrow: '<button class="' + elClass + '__btn-next" type="button"></button>'
+// function adaptiveSliders(el,elClass) {
+//   if(window.matchMedia('(min-width: 768px)').matches) {
+//     if($(el + slickInit).length >= 1) {
+//       $(el).slick('unslick');
+//     }
+//   } else {
+//     $(el).not(slickInit).slick({
+//       slidesToShow: 1,
+//       // prevArrow: '<button class="' + elClass + '__btn-prev" type="button"></button>',
+//       // nextArrow: '<button class="' + elClass + '__btn-next" type="button"></button>'
 
-    });
-  }
-}
-let slickInit = '.slick-initialized';
-adaptiveSliders('.js-slider-borts');
+//     });
+//   }
+// }
+// let slickInit = '.slick-initialized';
+// adaptiveSliders('.js-slider-borts');
 
-$(window).on('resize',function() {
-  adaptiveSliders('.js-slider-borts');
-});
+// $(window).on('resize',function() {
+//   adaptiveSliders('.js-slider-borts');
+// });
 
 
 const burger = document.querySelector('.js-burger');
@@ -59,4 +59,25 @@ const mainNav = document.querySelector('.js-main-nav');
 burger.addEventListener('click', () => {
   mainNav.classList.toggle('is-show');
   burger.classList.toggle('is-active');
+});
+
+document.querySelectorAll('.js-main-nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    mainNav.classList.remove('is-show');
+    burger.classList.remove('is-active');
+  });
+});
+
+
+
+document.addEventListener('scroll', () => {
+  if (window.pageYOffset > 600) {
+    document.querySelector('.scroll-up').classList.add('is-show');
+  } else {
+    document.querySelector('.scroll-up').classList.remove('is-show');
+  }
+});
+
+document.querySelector('.scroll-up').addEventListener('click', () => {
+  window.scrollTo({top: 0, behavior: 'smooth'});
 });
