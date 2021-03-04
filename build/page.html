@@ -9,6 +9,11 @@
     <meta name="format-detection" content="telephone=no" />
     <link rel="stylesheet" media="all" href="css/app.css" />
     <link rel="icon" href="./img/logo.svg" sizes="30x30">
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   </head>
   <body>
     <!-- BEGIN content -->
@@ -22,15 +27,15 @@
               <span></span>
             </button>
             <nav class="main-nav">
-              <a href="./page.html" class="logo">
+              <a href="./index.html" class="logo">
                 <img src="./img/logo.svg" alt="Логотип">
               </a>
               <ul class="main-nav__list js-main-nav">
                 <li class="main-nav__item">
-                  <a href="./page.html#gidrobords" class="main-nav__link ">Гидроборты</a>
+                  <a href="./index.html#gidrobords" class="main-nav__link ">Гидроборты</a>
                 </li>
                 <li class="main-nav__item">
-                  <a href="./page.html#zapchasti" class="main-nav__link ">Запчасти</a>
+                  <a href="./index.html#zapchasti" class="main-nav__link ">Запчасти</a>
                 </li>
                 <li class="main-nav__item">
                   <a href="#" class="main-nav__link ">Сендвич-панели</a>
@@ -168,35 +173,35 @@
             <h3 class="cooks__title" id="gidrobords">Гидроборты</h3>
             <div class="cooks__list js-slider-borts">
               <div class="cooks__item">
-                <a href="#" class="cook">
+                <a href="#contacts-modal" rel="modal:open" class="cook">
                   <div class="cook__img"><img src="./img/bort1.jpg" alt="Торти"></div>
                   <h4 class="cook__title">Традиционные гидроборты</h4>
                   <!-- <p class="cook__text">Облегчённый 4-х цилиндровый гидроборт для короткого свеса</p> -->
                 </a>
               </div>
               <div class="cooks__item">
-                <a href="#" class="cook">
+                <a href="#contacts-modal" rel="modal:open" class="cook">
                   <div class="cook__img"><img src="./img/bort2.jpg" alt="Торти"></div>
                   <h4 class="cook__title">Подъемники для цельнометаллических автофургонов</h4>
                   <!-- <p class="cook__text">Вишукані французькі тістечка в асортименті</p> -->
                 </a>
               </div>
               <div class="cooks__item">
-                <a href="#" class="cook">
+                <a href="#contacts-modal" rel="modal:open" class="cook">
                   <div class="cook__img"><img src="./img/bort3.jpg" alt="Торти"></div>
                   <h4 class="cook__title">Колонные подъемники</h4>
                   <!-- <p class="cook__text">Вишукані цукерки ручноі роботи</p> -->
                 </a>
               </div>
               <div class="cooks__item">
-                <a href="#" class="cook">
+                <a href="#contacts-modal" rel="modal:open" class="cook">
                   <div class="cook__img"><img src="./img/bort4.jpg" alt="Торти"></div>
                   <h4 class="cook__title">Выдвижные гидроборты (слайдеры) </h4>
                   <!-- <p class="cook__text">Наші чіз-кейки взяли все найкраще від «класичного» чіз-кейку</p> -->
                 </a>
               </div>
               <div class="cooks__item">
-                <a href="#" class="cook">
+                <a href="#contacts-modal" rel="modal:open" class="cook">
                   <div class="cook__img"><img src="./img/bort5.jpg" alt="Торти"></div>
                   <h4 class="cook__title">Решения для специального назначения</h4>
                   <!-- <p class="cook__text">Ми робимо десерти з індивідуальним дизайном для будь-якого заходу та святкового столу</p> -->
@@ -211,54 +216,54 @@
           </div>
           <h3 class="cooks__title" id="zapchasti">Запчасти для гидробортов</h3>
           <div class="details">
-            <div class="details__item">
+            <a href="#contacts-modal" rel="modal:open" class="details__item">
               <div class="details__img"><img src="./img/zapchasti-1.jpg" alt=""></div>
               <h4>Боксы, ручки, пластины, зажимы</h4>
-            </div>
-            <div class="details__item">
+            </a>
+            <a href="#contacts-modal" rel="modal:open" class="details__item">
               <div class="details__img"><img src="./img/zapchasti-2.jpg" alt=""></div>
               <h4>Гидроилиндры</h4>
-            </div>
-            <div class="details__item">
+            </a>
+            <a href="#contacts-modal" rel="modal:open" class="details__item">
               <div class="details__img"><img src="./img/zapchasti-3.jpg" alt=""></div>
               <h4>Компоненты гидроцилиндров</h4>
-            </div>
-            <div class="details__item">
+            </a>
+            <a href="#contacts-modal" rel="modal:open" class="details__item">
               <div class="details__img"><img src="./img/zapchasti-4.jpg" alt=""></div>
               <h4>Моторы, насосы, реле</h4>
-            </div>
-            <div class="details__item">
+            </a>
+            <a href="#contacts-modal" rel="modal:open" class="details__item">
               <div class="details__img"><img src="./img/zapchasti-5.jpg" alt=""></div>
               <h4>Клапаны и катушки</h4>
-            </div>
-            <div class="details__item">
+            </a>
+            <a href="#contacts-modal" rel="modal:open" class="details__item">
               <div class="details__img"><img src="./img/zapchasti-6.jpg" alt=""></div>
               <h4>Шплинты, втулки, валы</h4>
-            </div>
-            <div class="details__item">
+            </a>
+            <a href="#contacts-modal" rel="modal:open" class="details__item">
               <div class="details__img"><img src="./img/zapchasti-7.jpg" alt=""></div>
               <h4>Шланги, рукава, трубки</h4>
-            </div>
-            <div class="details__item">
+            </a>
+            <a href="#contacts-modal" rel="modal:open" class="details__item">
               <div class="details__img"><img src="./img/zapchasti-8.jpg" alt=""></div>
               <h4>Механические части (скобы, замки, прокладки)</h4>
-            </div>
-            <div class="details__item">
+            </a>
+            <a href="#contacts-modal" rel="modal:open" class="details__item">
               <div class="details__img"><img src="./img/zapchasti-9.jpg" alt=""></div>
               <h4>Переключатели и контроллеры</h4>
-            </div>
-            <div class="details__item">
+            </a>
+            <a href="#contacts-modal" rel="modal:open" class="details__item">
               <div class="details__img"><img src="./img/zapchasti-10.jpg" alt=""></div>
               <h4>Кабели и разъёмы</h4>
-            </div>
-            <div class="details__item">
+            </a>
+            <a href="#contacts-modal" rel="modal:open" class="details__item">
               <div class="details__img"><img src="./img/zapchasti-11.jpg" alt=""></div>
               <h4>Разные электрические части</h4>
-            </div>
-            <div class="details__item">
+            </a>
+            <a href="#contacts-modal" rel="modal:open" class="details__item">
               <div class="details__img"><img src="./img/zapchasti-12.jpg" alt=""></div>
               <h4>Разные мелкие запчасти</h4>
-            </div>
+            </a>
           </div>
         </div>
         <!-- <div class="features">
@@ -341,6 +346,17 @@
 			</div>
 		</div>
 	</div> -->
+        <!-- Modal HTML embedded directly into document -->
+        <div id="contacts-modal" class="modal">
+          <div class="modal__contact">
+            <h3>Уточнить у менеджера:</h3>
+            <p class="modal__tel"><a href="tel:+30930680368">+38 (093) 068-03-68</a> Леонид</p>
+            <p class="modal__tel"><a href="tel:+30677037858">+38 (067) 703-78-58</a> Олег</p>
+            <p>ежедневно с 08:00 до 22:00</p>
+          </div>
+        </div>
+        <!-- Link to open the modal
+  <p><a href="#contacts-modal" rel="modal:open">Open Modal</a></p> -->
         <div class="scroll-up">
           <img src="./img/arrow-up.svg" alt="">
         </div>
